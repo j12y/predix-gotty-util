@@ -1,0 +1,12 @@
+---
+applications:
+- name: gotty
+  memory: 128M
+  instances: 1
+  random-route: true
+  path: .
+  buildpack: https://github.com/cloudfoundry/multi-buildpack
+  command: $HOME/gotty -p "$PORT" -w -c "username:password" /bin/bash
+services:
+- postgres-2.0
+- predix-cache

@@ -1,0 +1,10 @@
+---
+repos:
+- deb http://apt.postgresql.org/pub/repos/apt/ trusty-pgdg main
+packages:
+- build-essential
+- redis-tools
+- postgresql-9.6
+- postgresql-client-9.6
+- python-dev
+- python-pip
