@@ -2,7 +2,7 @@ source /home/vcap/.bashrc
 
 # Needed for apt-buildpack install of psql
 export PERLLIB="{$DEPS_DIR}/0/apt/usr/share/perl5"
-export PATH="${DEPS_DIR}/0/apt/usr/lib/postgresql/9.6/bin:${PATH}"
+export PATH="${DEPS_DIR}/0/apt/usr/local/bin:${DEPS_DIR}/0/apt/usr/lib/postgresql/9.6/bin:${PATH}"
 
 # Needed for apt-buildpack install of python 2.7 and pip
 export PYTHONHOME="${DEPS_DIR}/0/apt/usr"
